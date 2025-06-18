@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    color: #333;
+}
+
+.navbar {
+    background-color: #075E54;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    animation: slideIn 1s ease-out;
+}
+
+.nav-buttons .btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #075E54;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-buttons .btn:hover {
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+}
+
+.hero {
+    background: linear-gradient(135deg, #128C7E, #25D366);
+    padding: 5rem 2rem;
+    text-align: center;
+    color: white;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    background-color: white;
+    color: #075E54;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-3px);
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    animation: slideUp 1s ease-in-out;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    color: #128C7E;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #075E54;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+
+.nav-buttons .chat-btn, .nav-buttons .logout-btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #075E54;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-buttons .chat-btn:hover{
+    background-color: #e0f7fa;
+    transform: scale(1.05);
+}
