@@ -81,9 +81,6 @@ CREATE TABLE messages (
 Open DBUtil.java or DBConnection.java
 
 Update your database credentials:
-
-java
-Copy code
 private static final String URL = "jdbc:mysql://localhost:3306/chat_db";
 private static final String USER = "root";
 private static final String PASSWORD = "your_password";
@@ -91,9 +88,6 @@ private static final String PASSWORD = "your_password";
 Export project as a .war file or run directly from Eclipse
 
 Start Tomcat server and navigate to:
-
-bash
-Copy code
 http://localhost:8080/ChattrApp/login.jsp
 5️⃣ Login & Chat
 Sign up or log in with your credentials
@@ -101,8 +95,6 @@ Sign up or log in with your credentials
 Start chatting in the public chatroom — messages update in real-time 🎯
 
 🧩 Project Structure
-pgsql
-Copy code
 ChattrApp/
 │
 ├── src/main/java/
